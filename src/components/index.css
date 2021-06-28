@@ -1,0 +1,41 @@
+.dot {
+    height: 20px;
+    width: 20px;
+    background-color:black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 2s;
+    margin-top: 15px;
+    text-align: center;
+    color: none;
+    margin-left: 10px;
+    
+    
+}
+.app-div{
+
+    margin-top: 40px;
+    border:solid  rgb(156, 155, 155);
+    width: 350px;
+    margin-left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.header-div{
+    width: 350px;
+    padding: 10px;
+    background-color: rgb(156, 155, 155);
+    margin-top: -3px;
+    cursor: pointer;
+}
+p{
+    margin-left: 15px;
+}
+.title{
+    font-weight: bold;
+    
+}
+.title:hover{
+    font-size: large;
+    cursor: pointer;
+}

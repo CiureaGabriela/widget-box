@@ -1,25 +1,44 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { Switch, Route } from "react-router-dom";
 
-export default App;
+
+import Page1 from './pages/Page1';
+import Page2 from './pages/Page2';
+import Page3 from './pages/Page3';
+
+
+export default function App () {
+   
+
+       
+       return(
+              <div className=' app-div d-flex justify-content-center '>
+               
+
+                 <Switch>
+                   <Route exact path="/" component={Page1}/>
+                   <Route  path="/page2" component={()=><Page2 redirect={false}/>}/>
+                   {/* <Route  path="/page3" component={Page3}/> */}
+                 </Switch>
+                   
+                    
+
+                </div>
+
+
+
+                );
+
+             }
+  
+             
+     
+
+    
+               
+
+
+ 
